@@ -1,0 +1,157 @@
+:root{
+    --back-color-dark: #9629DB;
+    --back-color-bright: #B05EE4;
+    --base-font-family: system-ui, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+
+
+html{
+    font-family: var(--base-font-family);
+}
+
+@keyframes fadein {
+    0% { opacity: 0; transform: translate(0px, 10px); }
+    20% { opacity: 0; transform: translate(0px, 40px);}
+    70% {transform: translate(0px, -2px);}
+    100% { opacity: 1; }
+}
+
+@keyframes fadein-div {
+    0% { opacity: 0; transform: translate(0px, 10px); }
+    20% { opacity: 0; transform: translate(0px, 40px);}
+    70%{  transform: translate(0px, -10px);}
+    100% { opacity: 1; }
+}
+
+@keyframes popup {
+    0% { opacity: 0; transform: scale(0);}
+    20% { opacity: 0; }
+    40% { transform:scale(1.1);}
+    80% { transform:scale(1);}
+    100% { opacity: 1; }
+}
+
+h3,p,a,li{color:white; font-size: 18px;}
+hr, h3, p, a, h2, div{animation-name: fadein; animation-duration:1s;}
+.Section{animation-name: fadein-div; animation-duration:0.5s;}
+img{animation-name:popup; animation-duration: 1s;}
+
+a:hover{color:black}
+
+.topnav{
+    
+    background: linear-gradient(#B05EE4, #9629DB);
+    width:100vw;
+    height:60px;
+    overflow: hidden;
+    text-align: center;
+    position: fixed;
+    z-index: 99;
+
+}
+
+
+.footer-copyright{
+    text-align:right;
+    font-size:15px;
+}
+
+#footer-link{
+   text-decoration:none;
+}
+
+#footer-link:hover{
+    color: var(--back-color-bright);
+}
+
+.Header{
+
+    text-align: center;
+    justify-content: center;
+    
+}
+
+.Header-text{
+
+   margin-top:20px;
+
+}
+
+.Release-links{
+
+    position:relative;
+    bottom:15px;
+    text-align: center;
+    justify-content: center;
+    display: inline-flex;
+    flex-wrap: wrap;
+    
+}
+
+.Release-links > p{
+    margin: 6px;
+}
+
+.Section{
+
+    background: linear-gradient(#B05EE4, #9629DB);
+    margin:0 auto;
+    border-radius: 10px;
+    width:840px;
+    height: auto;
+    animation-name: section-fadein; animation-duration:0.4s;
+    margin-top: 30px;
+    font-size: 150%;
+    overflow: hidden;
+    display:block;
+
+}
+
+@keyframes section-fadein {
+    0% {transform: scale(1,0)}
+}
+
+.Section-header{
+    padding: 10px;
+    justify-content: center;
+    width:200px;
+    margin: 0 auto;
+}
+
+#Section-Title{
+
+    color: white;
+    width:800px;
+    font-size:100%;
+    font-weight: 400px;
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    position:relative;
+    left:-300px;
+    top:10px;
+    margin-top:0;
+    
+}
+
+.Section-Content{
+    justify-content: center;
+    width:200px;
+    margin: 0 auto;
+    margin-top:-30px;
+    text-size-adjust: auto;
+}
+
+#Section-Para{
+    color: white;
+    width:800px;
+    font-size:16px;
+    
+    margin-left:-300px;
+    padding:5px 0;
+    font-weight: 10px;
+}
+
+@media screen and (max-width: 600px) {
+
+}
