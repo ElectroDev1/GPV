@@ -7,6 +7,8 @@
 
       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
+      <script src="jquery.js"></script> 
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <script>
          $(window).load(function(){
           if (location.hash) {
@@ -15,6 +17,8 @@
             }, 1);
           }
        });
+
+      
      </script>
        
       <title>GPV guide</title>
@@ -37,19 +41,30 @@
    <!--Body-->
    <body>
    
-   <section class="content">
+   <section class="content" id="section">
 
-      <article>
       <!--Header-->
       <div class="Header">
         
             <!--Logo-->
-            <img  src="Images/logo.png">
+            <img  src="Images/logo.png" id="logo" onload="topFunction()">
  
             <hr style="width:1300px; margin-top:-50px;">
 
             <!--Header text-->
             <div class="Header-text">
+
+               <div style="background-image:
+               repeating-linear-gradient( 45deg,yellow, yellow 10px, rgb(0, 0, 0) 10px,rgb(0, 0, 0) 20px /* determines size */
+               );
+               color:white; width:90vw; height:10px; margin:0 auto;
+               "></div>
+               <h2 style="color:white;">The site is currently under development</h2>
+               <div style="background-image:
+               repeating-linear-gradient( 45deg,yellow, yellow 10px, rgb(0, 0, 0) 10px,rgb(0, 0, 0) 20px /* determines size */
+               );
+               color:white; width:90vw; height:10px; margin:0 auto;
+               "></div>
 
                <p>A tool aimed at beginners to easily create Gamemaker particles by
                <a href="https://twitter.com/EIectroDev" target="_blank">Electro</a></p>
@@ -66,7 +81,7 @@
                <div class="Release-links" style="margin-left:10px; position: relative; top:5px;">
                    <p><a href="https://electrodev1.github.io/games#tools" target="_blank">More GMS2 tools</a></p>
                    <p>•</p>
-                   <p><a href="https://electrodev1.github.io/" target="_blank">More from Electro</a></p>
+                   <p><a href="https://electrodev1.github.io/home/" target="_blank">More from Electro</a></p>
                </div>
 
             </div>
@@ -119,7 +134,7 @@
       </div>
       </div> 
 
-      </article>
+   
 
    </section>   
     
@@ -128,8 +143,14 @@
         <p class="footer-copyright">Gamemaker Particle Visualizer 2022 by <b><a href="https://twitter.com/EIectroDev" id="footer-link" target="_blank">Electro</a></b></p>
       </footer>
 
+     <script>
+     $(document).ready(function(){
+        $('html,body').animate({ scrollTop: $("#section").offset().top}, 1000);
+       });
+     </script>
+
    </body>
-   
+
   
 
 </html>

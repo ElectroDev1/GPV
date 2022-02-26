@@ -37,6 +37,24 @@ hr, h3, p, a, h2, div{animation-name: fadein; animation-duration:1s;}
 .Section{animation-name: fadein-div; animation-duration:0.5s;}
 img{animation-name:popup; animation-duration: 1s;}
 
+hr {
+    display: block;
+    background-color:white;
+    color:white;
+    margin-top: 0.1em;
+    margin-bottom: 0.1em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    border-width: 1px;
+}
+
+hr::before {
+    color:white;
+    display: block;
+    text-align: center;
+}
+
 a:hover{color:black}
 
 .topnav{
@@ -108,6 +126,10 @@ a:hover{color:black}
 
 }
 
+.Section hr{
+   
+}
+
 @keyframes section-fadein {
     0% {transform: scale(1,0)}
 }
@@ -121,7 +143,7 @@ a:hover{color:black}
 
 #Section-Title{
 
-    color: white;
+    
     width:800px;
     font-size:100%;
     font-weight: 400px;
