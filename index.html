@@ -76,6 +76,7 @@
                       <p>•</p>
                       <p><a href="https://eiectro.itch.io/gpv" target="_blank">Itch.io </a></p>
                   </div>
+                  <p style="position:relative; top:-20px;"><a href="https://discord.gg/KRfvxPTtP7" target="_blank">Discord server</a></p>
                </p>
                <hr style="width:400px; position: relative; bottom:18px;">
                <div class="Release-links" style="margin-left:10px; position: relative; top:5px;">
@@ -90,7 +91,9 @@
 
       
       <!--Features-->
-      <div class="Section" id="features">
+      <p class="Title">Introduction</p>
+
+      <div class="Section" id="features" style="margin-top:-10px;">
       <div class="Section-header">
              <p id="Section-Title">Features</p>
       </div>
@@ -112,26 +115,93 @@
       </div>
       </div> 
 
-      <div class="Section" id="features">
+      <div class="Section" id="about">
       <div class="Section-header">
-             <p id="Section-Title">About</p>
+             <p id="Section-Title">About and Support</p>
       </div>
       <div class="Section-Content">
-             <p>
-                 
+             <p id="Section-Para">
+                Gamemaker Particle Visualizer support every version of Gamemaker and target platforms, as it's only making the workflow with Gamemaker's
+                particles quicker and smoother. If you want to report a bug or suggest a new feature, please use the repository's 
+                <a href="https://github.com/ElectroDev1/Gamemaker-Particle-Visualizer/issues">Issues page</a>.<br>
+                The tool is always expanding to help experts and beginners alike through their games's development, so suggestions are always welcome!
              </p>
       </div>
       </div> 
 
-      <div class="Section" id="features">
+
+      <p class="Title" style="margin-bottom:0;">How to use</p>
+
+      <div class="Section" id="features" style="margin-top:-5px;">
       <div class="Section-header">
-             <p id="Section-Title">How to use</p>
+             <p id="Section-Title">Interface</p>
       </div>
       <div class="Section-Content">
-             <p>
-                 
+             <img id="Section-Para" src="Images/Screens/interface.png" style="margin-top:10px;">
+             <br> 
+             <p id="Section-Para">GPV features a simple but rich interface that lets you edit all of the particle's properties and more.
+                <br>This guide will go through every part of the editor.
              </p>
       </div>
+
+      <div class="Section-header">
+         <p id="Section-Title-Small">Toolbar</p>
+      </div>
+     
+      <div class="Section-Content">
+         <ul style="list-style-type: none; margin-left:-330px; ">
+            <li id="Section-Para" style="background: url('Images/Screens/button_home.png') no-repeat left top; height: 50px;padding-top: 0px; padding-left: 60px; margin:2px 0; margin-top:-30px;";>
+              <p> <b>Home</b> - Makes you go back to the title screen.<br>A prompt will appear if the current project is unsaved. </p>
+            </li>
+
+            <li id="Section-Para" style="background: url('Images/Screens/button_new.png') no-repeat left top; height: 50px;padding-top: 0px; padding-left: 60px; margin:2px 0; margin-top:-10px;";>
+               <p> <b>New particle</b> - Opens a new clean file.<br>A prompt will appear if the current project is unsaved.</p>
+            </li>
+
+            <li id="Section-Para" style="background: url('Images/Screens/button_open.png') no-repeat left top; height: 50px;padding-top: 0px; padding-left: 60px; margin:2px 0; margin-top:-10px;";>
+               <p> <b>Open particle</b> - Lets you open a previouly saved particle.<br>A prompt will appear if the current project is unsaved.</p>
+            </li>
+
+            <li id="Section-Para" style="background: url('Images/Screens/button_newsave.png') no-repeat left top; height: 50px;padding-top: 0px; padding-left: 60px; margin:2px 0; margin-top:-10px;";>
+               <p> <b>Save as</b> - Lets you save the current project as a new .GPV file.</p>
+            </li>
+
+            <li id="Section-Para" style="background: url('Images/Screens/button_save.png') no-repeat left top; height: 50px;padding-top: 0px; padding-left: 60px; margin:2px 0; margin-top:-10px;";>
+               <p> <b>Save</b> - Saves the current project's GPV file.</p>
+            </li>
+
+            <li id="Section-Para" style="background: url('Images/Screens/button_position.png') no-repeat left top; height: 50px;padding-top: 0px; padding-left: 60px; margin:2px 0; margin-top:-10px;";>
+               <p> <b>Show arrows</b> - Toggles axis arrows, emitter area preview, and emitter scaling.</p>
+            </li>
+
+            <li id="Section-Para" style="background: url('Images/Screens/button_angle.png') no-repeat left top; height: 50px;padding-top: 0px; padding-left: 60px; margin:2px 0; margin-top:-10px;";>
+               <p> <b>Show direction</b> - Toggles direction lines.</p>
+            </li>
+
+            <li id="Section-Para" style="background: url('Images/Screens/button_reset.png') no-repeat left top; height: 50px;padding-top: 0px; padding-left: 60px; margin:2px 0; margin-top:-10px;";>
+               <p> <b>Reset emitter</b> - Resets the emitter's position and scale.</p>
+            </li>
+
+            <li id="Section-Para" style="background: url('Images/Screens/button_copyscript.png') no-repeat left top; height: 50px;padding-top: 0px; padding-left: 60px; margin:2px 0; margin-top:-10px;";>
+               <p> <b>Copy script</b> - Copies a setParticleType script into the clipboard with the project's data.<br>
+                  Sprite data is not included so you'll have to import the sprites into your projects.</p>
+            </li>
+
+            <li id="Section-Para" style="background: url('Images/Screens/button_pause.png') no-repeat left top; height: 50px;padding-top: 0px; padding-left: 60px; margin:2px 0; margin-top:-10px;";>
+               <p> <b>Toggle stream</b> - Toggles the particle's stream, useful if you don't want a new particle<br>to appear every frame.
+            </li>
+         </ul>
+      </div>
+
+      <div class="Section-header">
+         <p id="Section-Title-Mid">Right sidebar - particle properties</p>
+      </div>
+
+      <div class="Section-header">
+         <p id="Section-Title-Mid">Left sidebar - particle shapes/sprites</p>
+      </div>
+    
+
       </div> 
 
    
@@ -140,13 +210,14 @@
     
       <!--Footer-->
       <footer>
-        <p class="footer-copyright">Gamemaker Particle Visualizer 2022 by <b><a href="https://twitter.com/EIectroDev" id="footer-link" target="_blank">Electro</a></b></p>
+        <p class="footer-copyright">Gamemaker Particle Visualizer 2022 by <b>
+           <a href="https://twitter.com/EIectroDev" id="footer-link" target="_blank">Electro</a></b></p>
       </footer>
 
      <script>
-     $(document).ready(function(){
+     /*$(document).ready(function(){
         $('html,body').animate({ scrollTop: $("#section").offset().top}, 1000);
-       });
+       });*/
      </script>
 
    </body>

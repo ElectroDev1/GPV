@@ -1,7 +1,7 @@
 :root{
     --back-color-dark: #9629DB;
     --back-color-bright: #B05EE4;
-    --base-font-family: system-ui, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    --base-font-family: "system-ui, Helvetica, Arial, sans-serif, Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 
@@ -143,8 +143,35 @@ a:hover{color:black}
 
 #Section-Title{
 
-    
     width:800px;
+    font-size:100%;
+    font-weight: 400px;
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    position:relative;
+    left:-300px;
+    top:10px;
+    margin-top:0;
+    
+}
+
+#Section-Title-Small{
+
+    width:200px;
+    font-size:100%;
+    font-weight: 400px;
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    position:relative;
+    left:-300px;
+    top:10px;
+    margin-top:0;
+    
+}
+
+#Section-Title-Mid{
+
+    width:500px;
     font-size:100%;
     font-weight: 400px;
     border-width: 0 0 1px 0;
@@ -167,13 +194,30 @@ a:hover{color:black}
 #Section-Para{
     color: white;
     width:800px;
-    font-size:16px;
+    
     
     margin-left:-300px;
     padding:5px 0;
     font-weight: 10px;
+    font-size:16px !important;
+}
+
+#Section-Para a{
+    font-size:16px;
 }
 
 @media screen and (max-width: 600px) {
 
+}
+
+.Title{
+    color:white; 
+    text-align:center; 
+    font-size:50px; 
+    font-family: 'Press Start 2P';
+     margin-bottom:0;
+     position:relative;
+     bottom:30px;
+     margin-top:80px;
+     text-decoration:underline;
 }
