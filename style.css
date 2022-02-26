@@ -1,7 +1,7 @@
 :root{
     --back-color-dark: #9629DB;
     --back-color-bright: #B05EE4;
-    --base-font-family: "system-ui, Helvetica, Arial, sans-serif, Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    --base-font-family: "system-ui", "Helvetica", "Arial", "sans-serif", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Press Start 2P";
 }
 
 
@@ -209,6 +209,7 @@ a:hover{color:black}
 @media screen and (max-width: 600px) {
 
 }
+
 
 .Title{
     color:white; 
