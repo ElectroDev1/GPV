@@ -126,6 +126,10 @@ a:hover{color:black}
 
 }
 
+@media (pointer:none), (pointer:coarse) {
+    width:80vw !important;
+}
+
 .Section hr{
    
 }
@@ -206,9 +210,6 @@ a:hover{color:black}
     font-size:16px;
 }
 
-@media screen and (max-width: 600px) {
-
-}
 
 
 .Title{
