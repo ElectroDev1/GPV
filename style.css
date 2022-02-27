@@ -116,7 +116,7 @@ a:hover{color:black}
     background: linear-gradient(#B05EE4, #9629DB);
     margin:0 auto;
     border-radius: 10px;
-    width:55vw;
+    width:840px;
     height: auto;
     animation-name: section-fadein; animation-duration:0.4s;
     margin-top: 30px;
@@ -213,7 +213,7 @@ a:hover{color:black}
 .Title{
     color:white; 
     text-align:center; 
-    font-size:4vw; 
+    font-size:50px; 
     font-family: 'Press Start 2P';
      margin-bottom:0;
      position:relative;
