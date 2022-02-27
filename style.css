@@ -126,9 +126,7 @@ a:hover{color:black}
 
 }
 
-@media (pointer:none), (pointer:coarse) {
-    width:80vw !important;
-}
+
 
 .Section hr{
    
@@ -222,4 +220,9 @@ a:hover{color:black}
      bottom:30px;
      margin-top:80px;
      text-decoration:underline;
+}
+
+@media (pointer:none), (pointer:coarse) {
+    .Section{ width:80vw !important; }
+    .Title{font-size:8vw;}
 }
