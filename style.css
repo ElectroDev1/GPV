@@ -33,11 +33,11 @@ html{
 }
 
 h3,p,a,li{color:white; font-size: 18px;}
-hr, h3, p, a, h2, div{animation-name: fadein; animation-duration:1s;}
+hr, h3, p, h2, div{animation-name: fadein; animation-duration:1s;}
 .Section{animation-name: fadein-div; animation-duration:0.5s;}
 img{animation-name:popup; animation-duration: 1s;}
 
-
+a{transition:all 0.2s; animation-name: fadein; animation-duration:1s;}
 
 hr {
     display: block;
@@ -59,7 +59,7 @@ hr::before {
 
 hr.img {max-width:90vw !important;}
 
-a:hover{color:black}
+a:hover{color:black; text-shadow: 0 0 40px white}
 
 #logo {width:1000px; max-width:90vw;}
 
